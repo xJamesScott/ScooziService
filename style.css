@@ -98,6 +98,10 @@ button {
     height: 3rem;
 }
 
+.test-title {
+    width: 600px;
+}
+
 .tp-bnr-container {
     background-image: url('images/home-hero-desktop.jpg');
     background-repeat: no-repeat;
@@ -109,13 +113,33 @@ button {
     margin-bottom: 16rem;
     
 }
+.bnr-sm {
+    height: 12.5rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 650px;
+    color: var(--accent2);
+    display: flex;
+    align-items: center;
+    margin-bottom: 16rem;
+}
+
+#about-bnr {
+    background-image: url('images/home-hero-desktop.jpg');       
+}
 
 .top-banner {
-    
+   width: 100%; 
 }
 
 .bnr-title-container {
     
+}
+.bnr-sm-title-container {
+    /* display: flex; */
+    background-image: url('/patterns/white-circles.svg');
+    background-repeat: no-repeat;
+    background-position-x: 102%;
 }
 .bnr-title h1 {
     
@@ -124,6 +148,11 @@ button {
 .bnr-subtitle-container {
     display: flex;
     
+}
+
+.bnr-sm-subtitle-container {
+    display: flex;
+    flex-direction: row;
 }
 
 #bnr-sub-line {
@@ -158,6 +187,17 @@ button {
     align-self: flex-end;
     right: -2rem;
     top: 33rem;
+}
+
+.bnr-sm-circles {
+    position: absolute;
+    align-self: flex-end;
+    justify-self: center;
+    
+    
+    /* right: -1.5%; */
+    
+    /* top: 33rem; */
 }
 
 .steps {
