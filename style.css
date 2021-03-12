@@ -221,7 +221,6 @@ button {
 
 .feat-img {
     border-radius: 50%;
-       
 }
 
 .feat-img-right {
@@ -244,14 +243,20 @@ button {
 .footer-container {
     display: flex;
     flex-direction: column;
+    
 }
 .footer {
     background-color: var(--main);
-}  
+}
+.ftr-bg-img {
+    align-self: flex-end;
+    position: absolute;
+    right: -8.5%;
+}
 
 .footer-cta {
     display: flex;
-    height: 35rem;
+    height: 20rem;
     justify-content: space-between;
     align-items: center;
 }  
@@ -263,6 +268,7 @@ button {
 .nav-footer-container {
     background-color: var(--accent3);
     height: 9rem;
+    
 }
 
 .center-spread-row {
