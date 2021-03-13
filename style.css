@@ -117,7 +117,6 @@ button {
     height: 12.5rem;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 650px;
     color: var(--accent2);
     display: flex;
     align-items: center;
@@ -125,7 +124,7 @@ button {
 }
 
 #about-bnr {
-    background-image: url('images/home-hero-desktop.jpg');       
+    background-image: url('images/about-hero-desktop.jpg');       
 }
 
 .top-banner {
@@ -237,6 +236,60 @@ button {
 .features-section {
     margin: 20rem auto;
 }
+
+
+.arrow-bg-long{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    align-self: flex-end;
+    background-image: url('/patterns/left-downward-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    
+}
+
+.feat-test {
+    display: flex;
+}
+
+.arrow-bg-short{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    align-self: flex-end;
+    background-image: url('/patterns/right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.arrow-bg-short-left {
+    position: absolute;
+    /* right: 0; */
+    right: -75%;
+    height: 20rem;
+    width: 100vw;
+    align-self: flex-end;
+    background-image: url('/patterns/left-downward-arrow.svg');
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+.arrow-bg-long-left-down {
+
+}
+
+.arrow-bg-right {
+    
+}
+
+.arrow-bg-right {
+    
+}
+
 .feature-card {
     display: flex;
     justify-content: space-between;
