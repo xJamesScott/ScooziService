@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Space Mono', monospace;
+    font-family: 'Lexend Deca', sans-serif;
+}
+:root {
+    --main: #495567;
+    --secondary: #FCB72B;
+    --accent1: #939CAA;
+    --accent2: #E5ECF4;
+    --darktext: #495567;
+    --accent3: #333A44;
+}
+
+.our-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value-boxes-wrapper {
+    display: flex;
+    margin: 5rem auto;
+}
+
+.value-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value-box-img {
+    border-radius: 50%;
+}
+
+.vb-num-size {
+    height: 6rem;   
+    width: 6rem;
+}
+.vb-number-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 6rem;   
+    width: 6rem;
+    background-color: var(--secondary);
+    /* position: relative;
+    bottom: 2.5rem; */
+    margin-top: -2.5rem;
+}
+
+.vb-title {
+    margin: 2rem auto;
+    
+
+}
+
+.vb-description {
+    text-align: center;
+    margin: auto;
+}
+
