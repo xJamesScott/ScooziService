@@ -103,6 +103,12 @@
     background-color: var(--accentlight);
 }
 
+.accord input[type=button] {
+    display: none !important;
+}
+
+
+
 
 
     
@@ -142,7 +148,7 @@
     
 }
   .accordion input[type=checkbox]:checked ~ .panel {
-    height: 120px;
+    height: 100%;
     padding-bottom: 1rem;
 }
   .accordion input[type=checkbox]:checked ~ label .mark {
@@ -151,7 +157,20 @@
     -ms-transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
-  .accordion .panel {
+
+
+  .accordion input[type=checkbox]:checked ~ .panel {
+    height: 100%;
+    padding-bottom: 1rem;
+}
+  .accordion input[type=checkbox]:checked ~ label .mark {
+    transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.accordion .panel {
     height: 0px;
     padding: 0;
     
