@@ -16,7 +16,7 @@ var collMark = document.getElementsByClassName("faq-button");
 //     });
 // }
 
-//Try 2
+//Option 2
 
 // var mark2 = document.querySelector("mark");
 // for (var i = 0; i < coll.length; i++) {
@@ -30,21 +30,44 @@ var collMark = document.getElementsByClassName("faq-button");
 //     });
 // }
 
-//Try 3
+//Option 3
 
-var accItem = document.getElementsByClassName('faq-button');
-var accHD = document.getElementsByClassName('panels');
+// var accItem = document.getElementsByClassName('faq-button');
+// var accHD = document.getElementsByClassName('panels');
+// for (i = 0; i < accHD.length; i++) {
+//     accHD[i].addEventListener('click', toggleItem, false);
+// }
+// function toggleItem() {
+//     var itemClass = this.parentNode.className;
+//     for (i = 0; i < accItem.length; i++) {
+//         accItem[i].className = 'closed';
+//     }
+//     if (itemClass == 'closed') {
+//         this.parentNode.className = 'accordion-open';
+//     }
+// }
+
+//Option 4
+
+var accItem = document.getElementsByClassName('accordionItem');
+var accHD = document.getElementsByClassName('accordionItemHeading');
 for (i = 0; i < accHD.length; i++) {
     accHD[i].addEventListener('click', toggleItem, false);
 }
 function toggleItem() {
     var itemClass = this.parentNode.className;
     for (i = 0; i < accItem.length; i++) {
-        accItem[i].className = 'closed';
+        accItem[i].className = 'accordionItem close';
     }
-    if (itemClass == 'closed') {
-        this.parentNode.className = 'accordion-open';
+    if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
     }
+   if (itemClass == 'color') {
+        this.firstChild.className = 'add-color';
+    }
+  else {
+    this.parentNode.className = 'color';
+  }
 }
 
 
