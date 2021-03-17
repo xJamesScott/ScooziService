@@ -147,27 +147,17 @@
     float: right;
     
 }
-  .accordion input[type=checkbox]:checked ~ .panel {
+  .accordion-open {
     height: 100%;
     padding-bottom: 1rem;
+    background-color: magenta;
 }
-  .accordion input[type=checkbox]:checked ~ label .mark {
+  .accordion-open {
     transform: rotate(135deg);
     -o-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
-}
-
-
-  .accordion input[type=checkbox]:checked ~ .panel {
-    height: 100%;
-    padding-bottom: 1rem;
-}
-  .accordion input[type=checkbox]:checked ~ label .mark {
-    transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+    height: 100vh;
 }
 
 .accordion .panel {
@@ -179,6 +169,3 @@
     border-radius: 5px;
 }
 
-.accordion .panel p {
-    margin: auto;
-}
