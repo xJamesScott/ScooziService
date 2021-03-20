@@ -4,12 +4,17 @@
     background-image: url('/images/world-map-desktop.png');
 }
 
+#locations-bnr {
+    background-image: url('/images/careers-locations-hero-desktop.jpg')
+}
+
 .location-card {
     background-image: url('/icons/location-marker.svg');
     color: var(--accent3);
 }
 
-#locations-bnr {
-    background-image: url('/images/careers-locations-hero-desktop.jpg')
+.locations-card:hover {
+ opacity: 30%;
 }
+
 

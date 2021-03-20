@@ -57,7 +57,9 @@ h4 {
 button {
     font-size: 1rem;
     font-weight: 800;
-    background-color: var(--secondary)
+    background-color: var(--secondary);
+    color: var(--accent2accent2);
+
 }
 
 button:hover {
@@ -102,8 +104,6 @@ button:hover {
 }
 
 .nav-header button {
-    
-    color: var(--accent2);
     background-color: var(--secondary);
     border: none;
     width: 12rem;
@@ -162,7 +162,6 @@ button:hover {
 
 .bnr-subtitle-container {
     display: flex;
-    
 }
 
 .bnr-sm-subtitle-container {
@@ -172,7 +171,6 @@ button:hover {
 
 #bnr-sub-line {
     height: 100%;
-
 }
 
 .bnr-subtitle-container {
@@ -208,11 +206,6 @@ button:hover {
     position: absolute;
     align-self: flex-end;
     justify-self: center;
-    
-    
-    /* right: -1.5%; */
-    
-    /* top: 33rem; */
 }
 
 .steps {
@@ -225,10 +218,6 @@ button:hover {
 
 .step-boxes {
     width: 33.3%;
-}
-
-.step-boxes > * {
-    
 }
 
 .step-icon {
@@ -253,7 +242,6 @@ button:hover {
     margin: 20rem auto;
 }
 
-
 .arrow-bg-long{
     position: absolute;
     right: 0;
@@ -263,8 +251,6 @@ button:hover {
     background-image: url('/patterns/left-downward-arrow.svg');
     background-repeat: no-repeat;
     background-position: bottom right;
-    
-    
 }
 
 .feat-test {
@@ -284,7 +270,6 @@ button:hover {
 
 .arrow-bg-short-left {
     position: absolute;
-    /* right: 0; */
     right: -75%;
     height: 20rem;
     width: 100vw;
@@ -292,18 +277,6 @@ button:hover {
     background-image: url('/patterns/left-downward-arrow.svg');
     background-repeat: no-repeat;
     background-position-y: top;
-}
-
-.arrow-bg-long-left-down {
-
-}
-
-.arrow-bg-right {
-    
-}
-
-.arrow-bg-right {
-    
 }
 
 .feature-card {
@@ -408,11 +381,9 @@ button:hover {
     gap: 1rem;
 }
 
-
 .navbar.collapsed {
     max-height: 0;
   }
-    
 
   .faq-button {
     background-color: #eee;
