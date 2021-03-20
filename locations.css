@@ -1,3 +1,11 @@
+@import "style.css";
+
 .locations-map {
     background-image: url('/images/world-map-desktop.png');
 }
+
+.location-card {
+    background-image: url('/icons/location-marker.svg');
+    color: var(--accent3);
+}
+
