@@ -1,1 +1,9 @@
 @import "style.css";
+
+.position-title, .position-location {
+    color: var(--accent3)
+}
+
+#careers-bnr {
+    background-image: url('/images/careers-locations-hero-desktop.jpg')
+}

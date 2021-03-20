@@ -9,3 +9,7 @@
     color: var(--accent3);
 }
 
+#locations-bnr {
+    background-image: url('/images/careers-locations-hero-desktop.jpg')
+}
+
