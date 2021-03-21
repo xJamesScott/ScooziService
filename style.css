@@ -10,6 +10,11 @@
     --darktext: #495567;
     --accent3: #333A44;
 }
+
+.mobile-nav {
+    display: none
+}
+
 body, .nav-header button{
     color: var(--main);
     font-family: 'Space Mono', monospace ;
@@ -396,15 +401,25 @@ button:hover {
     outline: none;
     font-size: 15px;
   }
-   
+
+  .mobile-menu-item {
+      color: var(--accent2)
+      margin-bottom: 1.8rem;
+  }
 
   @media screen and (max-width: 768px) {
+    .mobile-nav {
+        display: none
+    }
     #home-bnr {
         background-image: url('/images/home-hero-tablet.jpg');
     }
   }
 
   @media screen and (max-width: 375px) {
+    .nav-container {
+        display: none;
+    }
     #home-bnr {
         background-image: url('/images/about-hero-mobile.jpg');
     }
