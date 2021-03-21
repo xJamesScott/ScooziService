@@ -17,4 +17,16 @@
  opacity: 30%;
 }
 
+@media screen and (max-width: 768px) {
+    #locations-bnr {
+        background-image: url('/images/careers-locations-hero-tablet.jpg');
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    #locations-bnr {
+        background-image: url('/images/careers-location-hero-mobile.jpg');
+    }
+  }
+
 

@@ -1,5 +1,9 @@
 @import "style.css";
 
+#about-bnr {
+    background-image: url('images/home-hero-desktop.jpg');    
+}
+
 .our-values {
     display: flex;
     flex-direction: column;
@@ -140,3 +144,14 @@
     border-radius: 5px;
 }
 
+@media screen and (max-width: 768px) {
+    #about-bnr {
+        background-image: url('/images/about-hero-tablet.jpg');
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    #about-bnr {
+        background-image: url('/images/about-hero-mobile.jpg');
+    }
+  }
