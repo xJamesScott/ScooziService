@@ -407,7 +407,17 @@ button:hover {
       margin-bottom: 1.8rem;
   }
 
-  @media screen and (max-width: 768px) {
+.mobile-logo {
+display: flex;
+justify-content: center;
+}
+
+.mobile-menu-bg {
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
     .mobile-nav {
         display: none
     }
