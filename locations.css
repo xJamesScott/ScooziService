@@ -17,16 +17,40 @@
  opacity: 30%;
 }
 
+.loc-card-bg {
+    background: var(--secondary);
+    opacity: 15%;
+}
+
+.loc-mobile-cards {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     #locations-bnr {
         background-image: url('/images/careers-locations-hero-tablet.jpg');
     }
+
+    .locations-map {
+        background-image: url('/images/world-map-tablet.png');
+    }
+
   }
 
   @media screen and (max-width: 375px) {
     #locations-bnr {
         background-image: url('/images/careers-location-hero-mobile.jpg');
     }
+
+    .locations-map {
+        background-image: url('/images/world-map-mobile.png');
+    }
+
+    .loc-mobile-cards {
+        display: flex;
+        gap: 1rem;
+    }
+
   }
 
 
