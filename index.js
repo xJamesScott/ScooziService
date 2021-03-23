@@ -14,10 +14,9 @@ const menuToggle = () => {
     if (menuOpen.classList = "show") {
         hideOpen()
         showClose()
-    };
-    else {
-    setMenuClose()
-    setMenuOpen()
-}
+    } else {
+        setMenuClose()
+        setMenuOpen()
+    }
 };
 
