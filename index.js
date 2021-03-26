@@ -1,7 +1,4 @@
 
-
-const test = "This is script"
-
 document.getElementById("yo").innerHTML = test;
 
 const menuOpen = document.getElementById('mobile-menu-open')
