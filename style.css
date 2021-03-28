@@ -550,56 +550,88 @@ justify-content: center;
         align-items: center;
     }
 
-    
-    
-
-
     #home-bnr {
         background-image: url('/images/home-hero-tablet.jpg');
     }
   }
 
   @media screen and (max-width: 500px) {
+    h1 {
+     font-size: 2.5rem; 
+     line-height: 2.5rem;  
+    }
+
     .nav-container {
         display: none;
     }
 
-    
-    
-    .mobile-nav {
-        display: unset;
-        /* display: flex; */
-        flex-direction: column;
-        /* position: absolute; */
+    #mobile-menu-closed, #mobile-menu-open {
+        display: none;
         
+    }
+
+    #mobile-nav-menu {
+        display: flex;
+        overflow: hidden;
+        width: 0;
+        height: 100vh;
+        transition: width .4s ease;
+    }
+
+    #mobile-nav-menu.show {
+        /* display: flex;
+        overflow: hidden; */
+        width: 100vw;
+        /* height: 100vh; */
+        transition: width .4s ease;
+    }
+    #mobile-menu-open.show, #mobile-menu-closed.show {
+        display: unset;
+        position: absolute;
+        top: 3%;
+        left: 0;
+        margin-left: 2rem;
+    }
+
+    #dimmer {
+        height: 100vh;
+        position: fixed;
+        background-color: black;
+        opacity: 0%;
+        width: 0;
+        z-index: -1;
+        transition: opacity .4s;
+    }
+
+    #dimmer.show {
+        width: 100%;
+        transition: opacity .4s;
+        opacity: 70%;
+    }
+
+    .mobile-nav {
+        /* display: unset; */
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         width: 100vw;
         height: 100vh;
         z-index: 1;
-        
     }
 
-    #mobile-menu-open {
-        position: absolute;
-        top: 1%;
-        margin-left: 2rem;
-    }
-
-    #mobile-menu-closed {
-        position: absolute;
-        top: 1%;
-        margin-left: 2rem;
-    }
-
-    .mobile-nav-bnr {
-        height: 100vh;
+    /* #mobile-nav-menu .mobile-nav-bnr {
+        transition: width ease 1s;
         width: 100vw;
-        /* height: 100%; */
+        height: 100vh;
         display: flex;
         
-    }
+    } */
     
     .mobile-menu-bg {
-        background-color: var(--main);
+        background-color: var(--accent3);
         color: var(--bright-white);
         margin: 0;
         width: 65%;
@@ -611,16 +643,25 @@ justify-content: center;
         /* height: 100%; */
     }
 
+    .menu {
+        margin-top: 4rem;
+    }
+
     .mobile-menu-cta {
         border: none;
         margin-bottom: 1.5rem;
         margin-right: 2rem;
         height: 3.3rem;
+        min-width: 10rem;
     }
 
     .main-logo-bnr {
         background-color: var(--bright-white);
         width: 100%;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .mobile-menu-item {
@@ -630,8 +671,48 @@ justify-content: center;
         line-height: 1.5rem;
     }
     
+    .top-banner {
+        margin-left: 0;
+        margin-right: 0;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+    }
+
     #home-bnr {
         background-image: url('/images/home-hero-mobile.jpg');
         height: 100%;
     }
+
+    .bnr-circles {
+        display: none;
+    }
+
+    #bnr-sm-sub-line {
+        display: none;
+    }
+    
+    #bnr-arrow-mobile {
+        position: absolute;
+        left: 0;
+        top: 32rem;
+    }
+
+    .bnr-title .desktop {
+        display: none;
+    }
+
+    .bnr-title .mobile {
+
+    }
+    .bnr-subtitle {
+        font-size: .9rem;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .top-bnr-container {
+        margin-top: 4rem;
+    }
+
   }
