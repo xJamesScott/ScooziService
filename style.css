@@ -13,12 +13,16 @@
 }
 
 .mobile-nav {
-    display: none;
+    /* display: none; */
+    position: fixed;
+    top: 0
+    -webkit-transform: translateZ(0);
 }
 
 body, .nav-header{
     color: var(--main);
     font-family: 'Space Mono', monospace ;
+    margin: 0;
 }
 
 h1 {
@@ -534,6 +538,11 @@ justify-content: center;
     }
 }
 
+.test-div {
+    position: fixed;
+    top: 0;
+}
+
 @media screen and (max-width: 768px) {
     .mobile-nav {
         display: none;
@@ -550,11 +559,79 @@ justify-content: center;
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 500px) {
     .nav-container {
         display: none;
     }
+
+    
+    
+    .mobile-nav {
+        display: unset;
+        /* display: flex; */
+        flex-direction: column;
+        /* position: absolute; */
+        
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        
+    }
+
+    #mobile-menu-open {
+        position: absolute;
+        top: 1%;
+        margin-left: 2rem;
+    }
+
+    #mobile-menu-closed {
+        position: absolute;
+        top: 1%;
+        margin-left: 2rem;
+    }
+
+    .mobile-nav-bnr {
+        height: 100vh;
+        width: 100vw;
+        /* height: 100%; */
+        display: flex;
+        
+    }
+    
+    .mobile-menu-bg {
+        background-color: var(--main);
+        color: var(--bright-white);
+        margin: 0;
+        width: 65%;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* height: 100vh; */
+        /* height: 100%; */
+    }
+
+    .mobile-menu-cta {
+        border: none;
+        margin-bottom: 1.5rem;
+        margin-right: 2rem;
+        height: 3.3rem;
+    }
+
+    .main-logo-bnr {
+        background-color: var(--bright-white);
+        width: 100%;
+    }
+
+    .mobile-menu-item {
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+    
     #home-bnr {
-        background-image: url('/images/about-hero-mobile.jpg');
+        background-image: url('/images/home-hero-mobile.jpg');
+        height: 100%;
     }
   }
