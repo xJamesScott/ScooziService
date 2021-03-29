@@ -13,7 +13,7 @@
 }
 
 .mobile-nav {
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0
     -webkit-transform: translateZ(0);
@@ -171,6 +171,10 @@ button:hover {
     
 }
 
+.bnr-title .mobile {
+    display: none;
+}
+
 .bnr-subtitle-container {
     display: flex;
 }
@@ -186,6 +190,10 @@ button:hover {
 
 #bnr-sm-sub-line {
     display: none;       
+}
+
+#bnr-arrow-mobile { 
+    display: none;
 }
 
 .bnr-subtitle-container {
@@ -446,12 +454,20 @@ justify-content: center;
     margin-top: 4rem;
 }
 
-
-
 @media screen and (max-width: 1350px) {
     #home-bnr {
         background-image: url('/images/home-hero-tablet.jpg');
+        height: 768px;
     }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .bnr-title .mobile {
+        display: none;
+    }
+
 
     .tp-bnr-container {
         align-items: flex-start;
@@ -467,7 +483,6 @@ justify-content: center;
     }
     .bnr-subtitle-container {
         justify-content: center;
-
     }
 
     .bnr-subtitle {
@@ -482,18 +497,23 @@ justify-content: center;
 
     #bnr-sm-sub-line {
         display: unset; 
-        position: absolute; 
+        position: absolute;
         left: 0;
-        top: 500px;
+        top: 600px;
         width: 40%;
     }
 
-    
+    .bnr-circles {
+        top: 675px;
+    }
 
     .bnr-cta-container {
         display: flex;
     }
 
+    .nav-button {
+        min-width: 9.25rem !important;
+    }
     .steps {
         flex-direction: column;
         justify-content: center;
@@ -543,7 +563,7 @@ justify-content: center;
     top: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     .mobile-nav {
         display: none;
         justify-content: center;
@@ -558,7 +578,7 @@ justify-content: center;
   @media screen and (max-width: 500px) {
     h1 {
      font-size: 2.5rem; 
-     line-height: 2.5rem;  
+     line-height: 2rem;  
     }
 
     .nav-container {
@@ -703,7 +723,7 @@ justify-content: center;
     }
 
     .bnr-title .mobile {
-
+     display: block;   
     }
     .bnr-subtitle {
         font-size: .9rem;
