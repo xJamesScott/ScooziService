@@ -19,6 +19,14 @@
     -webkit-transform: translateZ(0);
 }
 
+html, body {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body, .nav-header{
     color: var(--main);
     font-family: 'Space Mono', monospace ;
@@ -440,8 +448,13 @@ button:hover {
   }
 
   .mobile-menu-item {
-      color: var(--accent2)
+      color: var(--accent2);
       margin-bottom: 1.8rem;
+  }
+
+   .mobile-menu-item a {
+      color: var(--accent2);
+      text-decoration: none !important;
   }
 
 .mobile-logo {
