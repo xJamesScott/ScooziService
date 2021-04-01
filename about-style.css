@@ -76,14 +76,22 @@
 .accordion {
     margin: 1rem auto;
     padding: 0 3rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     position: relative;
     display: flex;
     align-items: center;
     align-self: center;
     justify-self: center;
     justify-content: center;
-    background-color: var(--accentlight);
+    background-color: var(--accent4);
+    cursor: pointer;
+    transition: all .3s ease;
+    max-height: 50%;
+}
+
+.accordion .show {
+    transition: all .3s ease;
+    max-height: 100%;
 }
 
 .accord input[type=button] {
@@ -96,6 +104,10 @@
     display: flex;
     align-self: center;
     justify-self: flex-end;
+}
+
+.accordion > * > * > * { 
+    cursor: pointer;
 }
 
 .accordion label .mark {
@@ -113,36 +125,29 @@
     align-self: center;
     justify-self: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .accordion input[type=checkbox] {
     display: none;
     float: right;
-    
-}
-  
-.accordion-open {
-    height: 100%;
-    padding-bottom: 1rem;
-    background-color: magenta;
-}
-  
-.accordion-open {
-    transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    height: 100vh;
 }
 
-.accordion .panel {
-    height: 0px;
-    padding: 0;
-    
-    transition: height ease 1s, padding ease 1s;
-    overflow: hidden;
-    border-radius: 5px;
+.accordion:hover {
+    background-color: var(--accent4-hightlight);
 }
+
+.panel {
+    transition: max-height .2s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.show .panel {
+    transition: max-height .2s ease;
+    max-height: 100%;
+}
+  
 
 @media screen and (max-width: 768px) {
     #about-bnr {
