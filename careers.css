@@ -1,8 +1,34 @@
 @import "style.css";
 
+.position-card {
+    background-color: var(--accent4);
+    margin: 2rem 0;
+}
+
+.position-content {
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.position-button {
+    margin: 0;
+    width: 12rem;
+    height: 3rem;
+}
+
+.position-button:hover {
+    border: .2rem solid var(--secondary);
+    background-color: none;
+    color: var(--secondary);
+}
 .position-title, .position-location {
     color: var(--accent3)
 }
+
+
 
 #careers-bnr {
     background-image: url('/images/careers-locations-hero-desktop.jpg')
