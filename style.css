@@ -91,7 +91,8 @@ button:hover {
 .section-margin {
     max-width: 77%;
     margin: auto;
-    justify-self: center; 
+    justify-self: center;
+    position: relative; 
 }
 
 .nav-header {
@@ -169,16 +170,20 @@ button:hover {
 }
 
 .bnr-title-container {
-    
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
 }
 .bnr-sm-title-container {
     /* display: flex; */
-    background-image: url('/patterns/white-circles.svg');
-    background-repeat: no-repeat;
-    background-position-x: 102%;
+    /* background-image: url('/patterns/white-circles.svg'); */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: 102%; */
 }
-.bnr-title h1 {
-    
+
+.bnr-title {
+    text-align: left !important;
+    margin: 0;
 }
 
 .bnr-title .mobile {
@@ -191,7 +196,6 @@ button:hover {
 
 .bnr-sm-subtitle-container {
     display: flex;
-    flex-direction: row;
 }
 
 #bnr-sub-line {
@@ -206,8 +210,13 @@ button:hover {
     display: none;
 }
 
+.bnr-sm {
+    position: relative;
+}
+
 .bnr-subtitle-container {
     display: flex;
+    position: relative;
 }
 
 .bnr-subtitle-container img {
@@ -237,8 +246,12 @@ button:hover {
 
 .bnr-sm-circles {
     position: absolute;
-    align-self: flex-end;
-    justify-self: center;
+    /* align-self: flex-end;
+    justify-self: center; */
+    right: 0;
+    transform: translateX(15%);
+    /* bottom: 50%; */
+
 }
 
 .bnr-cta-container {
@@ -485,7 +498,10 @@ justify-content: center;
 
 
     .tp-bnr-container {
-        align-items: flex-start;
+        /* align-items: flex-start; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .top-banner {
         margin: 2rem 2rem;

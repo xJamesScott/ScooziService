@@ -1,11 +1,16 @@
 @import "style.css";
 
 .locations-map {
-    background-image: url('/images/world-map-desktop.png');
+    background-image: url('/images/locations-map-desktop.svg');
+    background-size: contain;
+    display: flex;
+    height: 543px;
+    width: 100%;
+    position: relative;
 }
 
 #locations-bnr {
-    background-image: url('/images/careers-locations-hero-desktop.jpg')
+    background-image: url('/images/careers-locations-hero-desktop.jpg');
 }
 
 .location-card {
@@ -24,6 +29,23 @@
 
 .loc-mobile-cards {
     display: none;
+}
+
+.locations-cta {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin: 10rem auto ;
+}
+
+.loc-cta-button {
+    min-width: 13rem;
+    height: 3.5rem;
+}
+
+.loc-cta-button:hover {
+    color: var(--secondary);
+    border: .15rem solid var(--secondary);
 }
 
 @media screen and (max-width: 768px) {
