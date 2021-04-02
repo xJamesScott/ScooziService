@@ -148,6 +148,8 @@ button:hover {
     display: flex;
     align-items: center;
     margin-bottom: 16rem;
+    position: relative;
+    /* flex-direction: column; */
     
 }
 
@@ -172,7 +174,6 @@ button:hover {
 .bnr-title-container {
     display: flex;
     justify-content: space-between;
-    margin: 0;
 }
 .bnr-sm-title-container {
     /* display: flex; */
@@ -226,7 +227,6 @@ button:hover {
 .bnr-subtitle {
     padding: 0 2rem;
     flex-basis: 30%;
-    
 }
 
 .bnr-subtitle p {
@@ -240,8 +240,12 @@ button:hover {
 .bnr-circles {
     position: absolute;
     align-self: flex-end;
-    right: -2rem;
-    top: 33rem;
+    right: -2%;
+    bottom: 10%;
+}
+
+.bnr-circles-tablet {
+    display: none;
 }
 
 .bnr-sm-circles {
@@ -265,20 +269,28 @@ button:hover {
    font-size: .9rem;
 }
 
-.steps-line {
-    position: absolute;
-    left: 0;
-    top: 1100px;
-    z-index: -1;
-    width: 70%;
-
+.steps-container {
+    position: relative;
+    margin: 0;
 }
+
 .steps {
     display: flex;
     margin-top: 150px;
     flex-direction: row;
     justify-content: space-between;
     gap: 4rem;
+    position: relative;
+}
+
+.steps-line {
+    position: absolute;
+    left: -20%;
+    top: 15%;
+    z-index: -1;
+    width: 90%;
+    justify-self: flex-start;
+
 }
 
 .step-boxes {
@@ -307,15 +319,22 @@ button:hover {
     margin: 20rem auto;
 }
 
+.feature-card-container {
+    position: relative;
+}
+
 .arrow-bg-long{
     position: absolute;
     right: 0;
-    height: 100vh;
-    width: 100vw;
-    align-self: flex-end;
-    background-image: url('/patterns/left-downward-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: bottom right;
+    bottom: 1%;
+    /* height: 100%;
+    width: 100%; */
+    /* height: 100vh;
+    width: 100vw; */
+    /* align-self: flex-end; */
+    /* background-image: url('/patterns/left-downward-arrow.svg'); */
+    /* background-repeat: no-repeat;
+    background-position: bottom right; */
 }
 
 .feat-test {
@@ -324,24 +343,29 @@ button:hover {
 
 .arrow-bg-short{
     position: absolute;
-    left: 0;
-    height: 100vh;
+    left: -5%;
+    top: 0;
+    z-index: 1;
+    /* height: 100vh;
     width: 100vw;
     align-self: flex-end;
     background-image: url('/patterns/right-arrow.svg');
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top left; */
 }
 
 .arrow-bg-short-left {
     position: absolute;
-    right: -75%;
-    height: 20rem;
-    width: 100vw;
-    align-self: flex-end;
+    right: 0;
+    top: 0;
+    width: 30%;
+    z-index: 1;
+    /* height: 20rem;
+    width: 100vw; */
+    /* align-self: flex-end;
     background-image: url('/patterns/left-downward-arrow.svg');
     background-repeat: no-repeat;
-    background-position-y: top;
+    background-position-y: top; */
 }
 
 .feature-card {
@@ -368,11 +392,13 @@ button:hover {
 
 .feat-img {
     border-radius: 50%;
+    z-index: -1;
 }
 
 .feat-img-right {
     justify-self: flex-start;
     align-self: flex-end;
+    max-width: 100%;
 }
 
 .feat-button {
@@ -482,7 +508,7 @@ justify-content: center;
     margin-top: 4rem;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1390px) {
     #home-bnr {
         background-image: url('/images/home-hero-tablet.jpg');
         height: 768px;
@@ -502,15 +528,18 @@ justify-content: center;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
     .top-banner {
         margin: 2rem 2rem;
+        margin-bottom: 10rem;
         flex-direction: column;
         justify-content: space-between;
     }
 
     .bnr-title {
-        text-align: center;
+        text-align: center !important;
+        margin: auto;
     }
     .bnr-subtitle-container {
         justify-content: center;
@@ -526,16 +555,32 @@ justify-content: center;
         display: none;
     }
 
+    .bnr-bottom-tablet {
+        position: relative;
+        /* margin-top: 2rem !important;
+        margin-bottom: 2rem; */
+        margin-top: 5rem;
+        width: 100%;
+    }
+    
     #bnr-sm-sub-line {
         display: unset; 
         position: absolute;
         left: 0;
-        top: 600px;
-        width: 40%;
+        bottom: 0;
+        /* width: 40%; */
     }
 
+    
     .bnr-circles {
-        top: 675px;
+        display: none;
+    }
+    
+    .bnr-circles-tablet {
+        display: flex;
+        position: absolute;
+        right: -2%;
+        bottom: 0;
     }
 
     .bnr-cta-container {
@@ -556,13 +601,23 @@ justify-content: center;
     }
 
     .steps-line {
-        transform: rotate(90deg) ;
+        left: -33%;
+        width: 100%;
+        transform: rotate(90deg);
+
     }
     
     .feature-card {
         flex-direction: column-reverse;
 
-    } 
+    }
+
+    .feature-card-container img{
+    }
+    
+    .feature-card.left {
+        flex-direction: column;
+    }
     
     .feature-column {
         display: flex;
@@ -587,6 +642,30 @@ justify-content: center;
         flex-direction: row;
         display: block;
     }
+
+    .feat-title {
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    .arrow-bg-long {
+        top: 20%;
+        margin: 0;
+    }
+
+    .arrow-bg-long img {
+        max-width: 105%;
+    }
+
+    .arrow-bg-short img {
+        max-width: 110%;
+    }
+
+    .arrow-bg-short-left img {
+        position: absolute;
+        right: -70%;
+        /* width: 200%; */
+    }
 }
 
 .test-div {
@@ -594,8 +673,8 @@ justify-content: center;
     top: 0;
 }
 
-@media screen and (max-width: 760px) {
-    .mobile-nav {
+@media screen and (max-width: 930px) {
+    /* .mobile-nav {
         display: none;
         justify-content: center;
         align-items: center;
@@ -603,10 +682,10 @@ justify-content: center;
 
     #home-bnr {
         background-image: url('/images/home-hero-tablet.jpg');
-    }
-  }
+    } */
+  
 
-  @media screen and (max-width: 500px) {
+  
     h1 {
      font-size: 2.5rem; 
      line-height: 2rem;  
@@ -766,4 +845,19 @@ justify-content: center;
         margin-top: 4rem;
     }
 
+    .bnr-bottom-tablet {
+        display: none;
+    }
+
+    .arrow-bg-short, .arrow-bg-long, .arrow-bg-short-left {
+        max-width: 30rem;
+    }
+
+    .arrow-bg-long {
+        right: -30%;
+        left: 20%;
+        top: 6rem;
+        bottom: 50%;
+        margin: auto;
+    }
   }
