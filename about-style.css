@@ -149,13 +149,37 @@
 }
   
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1390px) {
     #about-bnr {
         background-image: url('/images/about-hero-tablet.jpg');
     }
-  }
+    
+    .faqs {
+        justify-content: center;
+        margin-bottom: 7.5rem;
+    }
+    
+    .faq-sub-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
 
-  @media screen and (max-width: 375px) {
+    .faq-subtitle {
+        margin: 2rem 0;
+    }
+
+    .faq-sub-wrapper h3 {
+        text-align: center;
+    }
+
+    .faq-sub-wrapper > * {
+        width: 100%;
+    }
+
+   
+  @media screen and (max-width: 930px) {
     #about-bnr {
         background-image: url('/images/about-hero-mobile.jpg');
     }

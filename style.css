@@ -500,6 +500,7 @@ justify-content: center;
 }
 
 
+
 @media screen and (max-width: 1390px) {
     #home-bnr {
         background-image: url('/images/home-hero-tablet.jpg');
@@ -620,8 +621,6 @@ justify-content: center;
         gap: 3rem;
     }
 
-
-
     .steps-text {
         width: 80%;
         margin: 0;
@@ -693,6 +692,10 @@ justify-content: center;
     .arrow-bg-short-left img {
         position: absolute;
         right: -70%;
+    }
+
+    .value-boxes-wrapper {
+        flex-direction: column;
     }
 
     .footer-cta {
