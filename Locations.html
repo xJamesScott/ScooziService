@@ -15,14 +15,36 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-    <script type="module" src="faq-card.js"></script>
+    <script type="module" src="./faq-card.js"></script>
 </head>
 
 <body>
+
+    <div class="mobile-nav">
+        <div class="main-logo-bnr">
+            <a href="./index.html">
+                <div class="mobile-logo"><img src="./images/logo-scoozi.png" alt=""></div>
+            </a>
+            <img src="./icons/hambega menu.svg" id="mobile-menu-open" class="show">
+            <img src="./icons/hambega closed.svg" id="mobile-menu-closed" class="">
+        </div>
+        <div id="mobile-nav-menu" class="mobile-nav-bnr">
+            <div class="mobile-menu-bg">
+                <div class="menu">
+                    <h3 class="mobile-menu-item"><a href="./About.html">About</a></h3>
+                    <h3 class="mobile-menu-item"><a href="./Locations.html">Location</a></h3>
+                    <h3 class="mobile-menu-item"><a href="./Careers.html">Careers</a></h3>
+                </div>
+                <button class="mobile-menu-cta">Get Scootin</button>
+            </div>
+        </div>
+        <div id="dimmer"></div>
+    </div>
+
     <nav class="nav-container">
         <div class="section-margin nav-header">
             <div class="nav-links-grp">
-                <a href="./index.html"><span class="logo"> <img src="images/logo-scoozi.png" alt="logo"></span></a>
+                <a href="./index.html"><span class="logo"> <img src="./images/logo-scoozi.png" alt="logo"></span></a>
                 <span class="header-links">
                     <a href="./About.html">About</a>
                     <a href="./Locations.html">Location</a>
@@ -49,7 +71,7 @@
             </div>
 
         </div>
-        <img class="bnr-sm-circles" src="patterns/white-circles.svg" alt="">
+        <img class="bnr-sm-circles" src="./patterns/white-circles.svg" alt="">
     </div>
     <!-- Use SVG from designs as background for locations -->
     <div class="locations-map section-margin">
@@ -93,8 +115,8 @@
         <button class="loc-cta-button">Message Us</button>
     </div>
     <div id="e-footer"></div>
-    <script src="/footer.html" type="text/javascript"></script>
-
+    <script src="./footer.html" type="text/javascript"></script>
+    <script src="./index.js" type="text/javascript"></script>
 </body>
 
 </html>
