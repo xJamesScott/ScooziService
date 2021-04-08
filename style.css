@@ -1007,4 +1007,16 @@ justify-content: center;
     .footer-cta .desktop{
         display: none;
     }
+
+    .footer-cta {
+        margin-top: 4rem;
+        height: 450px;
+    }
+    .cta.bright-text.mobile {
+     /* display: none; */
+ }
+    .app-links img {
+        margin: 1rem auto;
+        width: 50%;
+    }
   }
