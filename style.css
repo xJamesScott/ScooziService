@@ -627,6 +627,7 @@ justify-content: center;
     }
 
     .steps-line {
+        /* may be better to make different line for tablet*/
         display: none;
         left: -300px;
         transform: rotate(90deg);
