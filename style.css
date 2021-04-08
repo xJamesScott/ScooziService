@@ -627,8 +627,11 @@ justify-content: center;
     }
 
     .steps-line {
-        left: -27%;
+        display: none;
+        left: -300px;
         transform: rotate(90deg);
+        width: 1000px;
+        margin: 0;
     }
 
     .steps-text {
