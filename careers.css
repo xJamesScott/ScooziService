@@ -31,17 +31,17 @@
 
 
 #careers-bnr {
-    background-image: url('/images/careers-locations-hero-desktop.jpg')
+    background-image: url('./images/careers-locations-hero-desktop.jpg')
 }
 
 @media screen and (max-width: 768px) {
     #careers-bnr {
-        background-image: url('/images/careers-locations-hero-tablet.jpg');
+        background-image: url('./images/careers-locations-hero-tablet.jpg');
     }
   }
 
   @media screen and (max-width: 375px) {
     #careers-bnr {
-        background-image: url('/images/careers-location-hero-mobile.jpg');
+        background-image: url('./images/careers-location-hero-mobile.jpg');
     }
   }
