@@ -627,8 +627,12 @@ justify-content: center;
     }
 
     .steps-line {
-        left: -27%;
+        /* may be better to make different line for tablet*/
+        display: none;
+        left: -300px;
         transform: rotate(90deg);
+        width: 1000px;
+        margin: 0;
     }
 
     .steps-text {
@@ -1002,5 +1006,17 @@ justify-content: center;
 
     .footer-cta .desktop{
         display: none;
+    }
+
+    .footer-cta {
+        margin-top: 4rem;
+        height: 450px;
+    }
+    .cta.bright-text.mobile {
+     /* display: none; */
+ }
+    .app-links img {
+        margin: 1rem auto;
+        width: 50%;
     }
   }
