@@ -5,6 +5,9 @@
     background-image: url('./images/careers-locations-hero-desktop.jpg');
 }
 
+.tp-bnr-container.bnr-sm {
+    background-image: url('./images/careers-locations-hero-desktop.jpg');
+}
 .locations-map {
     /* background-image: url('./images/locations-map-desktop.png');
     background-size: contain;
