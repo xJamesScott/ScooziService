@@ -151,7 +151,7 @@
 
 @media screen and (max-width: 1390px) {
     #about-bnr {
-        background-image: url('/images/about-hero-tablet.jpg');
+        background-image: url('./images/about-hero-tablet.jpg');
     }
     
     .faqs {
@@ -181,6 +181,6 @@
    
   @media screen and (max-width: 930px) {
     #about-bnr {
-        background-image: url('/images/about-hero-mobile.jpg');
+        background-image: url('./images/about-hero-mobile.jpg');
     }
   }

@@ -503,7 +503,7 @@ justify-content: center;
 
 @media screen and (max-width: 1390px) {
     #home-bnr {
-        background-image: url('/images/home-hero-tablet.jpg');
+        background-image: url('./images/home-hero-tablet.jpg');
         height: 768px;
     }
 
@@ -831,7 +831,7 @@ justify-content: center;
     }
 
     #home-bnr {
-        background-image: url('/images/home-hero-mobile.jpg');
+        background-image: url('./images/home-hero-mobile.jpg');
         height: 100%;
     }
 

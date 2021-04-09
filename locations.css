@@ -1,11 +1,11 @@
 @import "style.css";
 
 #locations-bnr {
-    background-image: url('/images/careers-locations-hero-desktop.jpg');
+    background-image: url('./images/careers-locations-hero-desktop.jpg');
 }
 
 .locations-map {
-    /* background-image: url('/images/locations-map-desktop.png');
+    /* background-image: url('./images/locations-map-desktop.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,7 +33,7 @@
 
 
 .location-card {
-    /* background-image: url('/icons/location-marker.svg'); */
+    /* background-image: url('./icons/location-marker.svg'); */
     background-repeat: no-repeat;
     width: 12rem;
     height: 6rem;
@@ -104,22 +104,22 @@
 
 @media screen and (max-width: 768px) {
     #locations-bnr {
-        background-image: url('/images/careers-locations-hero-tablet.jpg');
+        background-image: url('./images/careers-locations-hero-tablet.jpg');
     }
 
     .locations-map {
-        background-image: url('/images/world-map-tablet.png');
+        background-image: url('./images/world-map-tablet.png');
     }
 
   }
 
   @media screen and (max-width: 375px) {
     #locations-bnr {
-        background-image: url('/images/careers-location-hero-mobile.jpg');
+        background-image: url('./images/careers-location-hero-mobile.jpg');
     }
 
     .locations-map {
-        background-image: url('/images/world-map-mobile.png');
+        background-image: url('./images/world-map-mobile.png');
     }
 
     .loc-mobile-cards {
