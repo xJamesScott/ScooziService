@@ -14,8 +14,6 @@
     --accent4-hightlight: #FFF4DF;
 }
 
-
-
 .mobile-nav {
     display: none;
     position: fixed;
@@ -82,7 +80,6 @@ button {
     border: none;
     background-color: var(--secondary);
     color: var(--bright-white);
-
 }
 
 button:hover {
@@ -499,8 +496,6 @@ justify-content: center;
     margin-top: 4rem;
 }
 
-
-
 @media screen and (max-width: 1390px) {
     #home-bnr {
         background-image: url('./images/home-hero-tablet.jpg');
@@ -537,7 +532,6 @@ justify-content: center;
     }
     .top-banner {
         margin: 2rem 2rem;
-        /* margin-bottom: 10rem; */
         flex-direction: column;
         justify-content: space-between;
     }
@@ -549,12 +543,10 @@ justify-content: center;
     }
 
     .bnr-title {
-        /* text-align: center !important; */
         margin: 0;
         width: 100%;
         align-items: center;
         text-align: left !important;
-        /* display: flex; */
     }
 
     .test-title {
@@ -1013,7 +1005,6 @@ justify-content: center;
         height: 450px;
     }
     .cta.bright-text.mobile {
-     /* display: none; */
  }
     .app-links img {
         margin: 1rem auto;

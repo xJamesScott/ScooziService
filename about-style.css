@@ -76,7 +76,6 @@
 .accordion {
     margin: 1rem auto;
     padding: 0 3rem;
-    /* border-radius: 10px; */
     position: relative;
     display: flex;
     align-items: center;
@@ -147,7 +146,6 @@
     transition: max-height .2s ease;
     max-height: 100%;
 }
-  
 
 @media screen and (max-width: 1390px) {
     #about-bnr {
@@ -178,8 +176,7 @@
         width: 100%;
     }
 
-   
-  @media screen and (max-width: 930px) {
+    @media screen and (max-width: 930px) {
     #about-bnr {
         background-image: url('./images/about-hero-mobile.jpg');
     }

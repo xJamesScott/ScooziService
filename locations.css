@@ -5,42 +5,22 @@
 }
 
 .locations-map {
-    /* background-image: url('./images/locations-map-desktop.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 543px;
-    width: 1100px; */
-
-    /* margin: auto; */
-    
     display: flex;
     margin: 0 auto;
     position: relative;
 }
 
 .locations-map img {
-    /* position: relative; */
     margin: 0;
-    /* display: block; */
     width: 100%;
-    /* max-height: 100%; */
-    /* top: 0;
-    left: 0; */
-
 }
 
-
-
 .location-card {
-    /* background-image: url('./icons/location-marker.svg'); */
     background-repeat: no-repeat;
     width: 12rem;
     height: 6rem;
     color: var(--accent3);
     position: absolute;
-    /* position: relative; */
-    
     display: flex;
     overflow: visible;
     align-items: center;
