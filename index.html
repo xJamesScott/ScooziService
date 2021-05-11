@@ -22,25 +22,34 @@
 <body>
 
     <div class="invite-form" id="invite-form">
-        
-        <div class="form-button">X</div>
-        <div class="input-wrapper">
-            <img src="./icons/input-name.png" class="name-input-icon">
-            <input type="text">
-        </div>
+        <!-- <div class="dimmer-container"> -->
 
-        <div class="input-wrapper">
-            <img src="./icons/input-email.svg" class="email-input-icon">
-            <input type="email">
-        </div>
+        <div class="form-content">
+            <div class="form-button">X</div>
 
-        <div class="input-wrapper">
-            <img src="./icons/input-phone.svg" class="name-phone-icon">
-            <input type="text">
-        </div>
-        <!-- <div class="dimmer"></div> -->
+            <h3>REQUEST INVITE</h3>
+            <p>We'll notify you when you're all set to scoot!</p>
 
+            <div class="input-wrapper">
+                <img src="./icons/input-name.png" class="name-input-icon">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-wrapper">
+                <img src="./icons/input-email.png" class="email-input-icon">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-wrapper">
+                <img src="./icons/input-phone.png" class="name-phone-icon">
+                <input type="text" placeholder="Phone">
+            </div>
+
+            <div class="input-wrapper submit">
+                <input type="submit" class="form-submit" value="Submit">
+            </div>
+        </div>
+        <div id="dimmer-form" class="dimmer"></div>
     </div>
+
 
 
     <div class="mobile-nav">

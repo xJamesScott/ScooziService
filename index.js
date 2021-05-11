@@ -20,9 +20,13 @@ menuClose.addEventListener("click", (e) => { menuToggle() });
 menuOpen.addEventListener("click", (e) => { menuToggle() });
 
 const inviteForm = document.getElementById('invite-form')
+const dimmerForm = document.getElementById('dimmer-form');
+
+const toggleDimForm = () => { dimmer.classList.toggle("show") }
 
 const inviteFormToggle = () => {
     inviteForm.classList.toggle("form-visible")
+
 }
 
 const formTriggerButtons = document.getElementsByClassName('form-button')
@@ -31,6 +35,7 @@ for (let i = 0; i < formTriggerButtons.length; i++) {
     formTriggerButtons[i].addEventListener("click",
         (e) => {
             inviteFormToggle()
+            toggleDimForm()
             console.log("yooo!")
         }
     )
