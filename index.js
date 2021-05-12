@@ -54,16 +54,6 @@ for (let i = 0; i < formTriggerButtons.length; i++) {
     )
 }
 
-// const salesTriggerButtons = document.getElementsByClassName('sales-form form-button')
-// for (let i = 0; i < formTriggerButtons.length; i++) {
-//     formTriggerButtons[i].addEventListener("click",
-//         (e) => {
-//             inviteFormToggle()
-//             toggleDimForm()
-//         }
-//     )
-// }
-
 // Map marker hover
 
 const locationBox = document.getElementsByClassName('location-box')
@@ -100,11 +90,7 @@ for (let i = 0; i < formSubmitButtons.length; i++) {
                     submitForm(formContent[i])
                 }, 1700
             )
-            // e.preventDefault()
-            // preventDefault(formSubmitButtons[i])
-
         })
-    // console.log({formSubmitButtons: formSubmitButtons[i]})
 }
 
 
