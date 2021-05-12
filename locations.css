@@ -4,32 +4,112 @@
     background-image: url('./images/careers-locations-hero-desktop.jpg');
 }
 
-.locations-map {
+.map-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.locations-map {
+    /* display: flex; */
     margin: 0 auto;
     position: relative;
+    height: 650px;
+    display: inline-block;
 }
 
-.locations-map img {
+/* .locations-map img {
     margin: 0;
     width: 100%;
+    height: 100%;
+} */
+
+.map-img {
+    /* position: absolute; */
+    display: block;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    margin: auto;
 }
 
-.location-card {
-    background-repeat: no-repeat;
-    width: 12rem;
+ .location-card {
+    /* background-repeat: no-repeat; */
+    /* width: 12rem;
     height: 6rem;
     color: var(--accent3);
     position: absolute;
     display: flex;
-    overflow: visible;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
+    display: block; */
+    /* overflow: visible; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* margin: 0; */
+
+    
 }
 
-#new-york {
+
+.test-map {
+    position: relative;
+}
+
+.map-img-test {
+    height: 100vh;
+  width: 100vw;
+/*   background-size: 300px 100px; */
+  background-color: blue;
+  /* background-size: cover; */
+/*   position: relative; */
+  max-width: 100%;
+  /* width: 800px; */
+  display: block;
+  object-fit: contain;
+}
+.test-card {
+position: absolute;
+  display: block;
+  width: 5%;
+  height: 5%;
+  background: url('https://s33.postimg.cc/6d6a8b4yn/pin.png') no-repeat center center;
+  background-size: contain;
+/*   transform: translateX(150%) translateY(-150%); */
+
+    /* top: -500%;
+    left: 60%; */
+    top: 0;
+    left: 0;
+
+    transform: translateY(1000%) translateX(1000%);
+
+}
+
+.location-hover {
+    opacity: 50%;
+    transition: all .3s ease;
+
+}
+
+#new-york-test {
+   fill: green; 
+}
+
+.location-card {
+  position: absolute;
+  display: block;
+  width: 5%;
+  height: 5%;
+  /* background: url('https://s33.postimg.cc/6d6a8b4yn/pin.png') no-repeat center center;
+  background-size: contain; */
+/*   transform: translateX(150%) translateY(-150%); */
+  /* top: 50%;
+  left: 20%; */
+}
+
+#new-york.location-card {
+    position: absolute;
     top: 20%;
     left: 15%;
 }
@@ -47,9 +127,9 @@
     jakarta   
 }
 
-.location-card h3 {
+/* .location-card h3 {
     transform: translateY(-20%);
-}
+} */
 
 
 .locations-card:hover {
