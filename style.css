@@ -87,7 +87,7 @@ button:hover {
     background-color: var(--accent2);
 }
 
-.invite-form {
+.invite-form, .sales-form {
     margin: auto;
     /* display: flex;
     justify-content: center; */
@@ -101,10 +101,10 @@ button:hover {
     top: 0;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease;
+    transition: opacity, visibility .5s ease;
 }
 
-#invite-form.show.invite-form {
+#invite-form.show.invite-form, #sales-form.show.sales-form {
     opacity: 1;
     visibility: visible !important;
     /* display: unset; */
@@ -115,7 +115,9 @@ button:hover {
     transition: opacity .5s ease;
 }
 
-.form-content {
+
+
+.form-content, .form-submit-confirmation {
   z-index: 9999; 
   display: flex;
   gap: .25rem;
@@ -132,12 +134,17 @@ button:hover {
   position: relative;
 }
 
-.form-content h3 {
+.form-content h3, .form-submit-confirmation h3 {
     margin-bottom: 0;
     color: var(--accent4);
 }
 
-.invite-form .form-button{
+.sales-form p {
+    width: 70%;
+    text-align: center;
+}
+
+.invite-form .form-button, .sales-form .sales-button{
     position: absolute;
     font-weight: 600;
     right: 2%;
@@ -172,6 +179,7 @@ button:hover {
     width: 100%;
     color: var(--accent1);
     font-size: 1.6rem;
+    outline-width: 0;
     
 }
 
@@ -189,6 +197,11 @@ button:hover {
     color: var(--accent4) !important;
     font-size: 2rem;
     font-weight: 500;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.144);
+}
+
+.submit input:hover {
+    cursor: pointer;
 }
 
 .dimmer-container {
@@ -203,7 +216,7 @@ button:hover {
     top: 0; */
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.383);
+    background-color: rgba(255, 255, 255, 0.383);
     z-index: -99999;
     /* opacity: 100%; */
     /* display: none; */
@@ -222,18 +235,32 @@ button:hover {
 .input-wrapper img {
     height: 30px;
     width: 30px;
-    fill: green !important;
-    color: blue;
+    margin: auto;
     margin-right: .75rem;
 }
 
-#invite-form.invite-form.form-visible {
-    /* opacity: 1; */
+#invite-form.invite-form.form-visible, #sales-form.sales-form.form-visible {
     opacity: 100%;
     display: flex;
     visibility: visible;
-    
-    
+}
+
+.form-content.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.form-submit-confirmation {
+    visibility: hidden;
+    display: none;
+    justify-self: center;
+    align-self: center;
+}
+
+.form-submit-confirmation.show {
+    visibility: visible;
+    display: unset;
+    margin: auto;
 }
 
 .section-margin {

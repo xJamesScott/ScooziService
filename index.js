@@ -23,10 +23,25 @@ menuOpen.addEventListener("click", (e) => { menuToggle() });
 // Request form modal
 
 const inviteForm = document.getElementById('invite-form')
+const salesForm = document.getElementById('sales-form')
 const dimmerForm = document.getElementById('dimmer-form');
 const toggleDimForm = () => { dimmer.classList.toggle("show") }
 const inviteFormToggle = () => {
     inviteForm.classList.toggle("form-visible")
+}
+
+const salesFormToggle = () => {
+    salesForm.classList.toggle("form-visible")
+}
+
+const salesFormTriggerButtons = document.getElementsByClassName('sales-button')
+for (let i = 0; i < salesFormTriggerButtons.length; i++) {
+    salesFormTriggerButtons[i].addEventListener("click",
+        (e) => {
+            salesFormToggle()
+            toggleDimForm()
+        }
+    )
 }
 
 const formTriggerButtons = document.getElementsByClassName('form-button')
@@ -35,10 +50,19 @@ for (let i = 0; i < formTriggerButtons.length; i++) {
         (e) => {
             inviteFormToggle()
             toggleDimForm()
-            console.log("yooo!")
         }
     )
 }
+
+// const salesTriggerButtons = document.getElementsByClassName('sales-form form-button')
+// for (let i = 0; i < formTriggerButtons.length; i++) {
+//     formTriggerButtons[i].addEventListener("click",
+//         (e) => {
+//             inviteFormToggle()
+//             toggleDimForm()
+//         }
+//     )
+// }
 
 // Map marker hover
 
@@ -47,7 +71,6 @@ const locationBg = document.getElementsByClassName('location-bg')
 const locationBgOpacity = (e) => e.classList.toggle('location-hover')
 
 for (let i = 0; i < locationBox.length; i++) {
-    console.log({locationBox: locationBox})
     locationBox[i].addEventListener('mouseover',
         () => {
             locationBgOpacity(locationBg[i])
@@ -55,8 +78,36 @@ for (let i = 0; i < locationBox.length; i++) {
     locationBox[i].addEventListener('mouseout',
         () => {
             locationBgOpacity(locationBg[i])
+            console.log("out!")
         })
 }
+
+const formSubmitButtons = document.getElementsByClassName('form-submit')
+const formSubmitConfirmations = document.getElementsByClassName('form-submit-confirmation')
+const formContent = document.getElementsByClassName('form-content')
+const handleFormSubmit = (e) => e.classList.toggle('show')
+const submitForm = (e) => e.submit()
+const handleFormHide = (e) => e.classList.toggle('hide')
+for (let i = 0; i < formSubmitButtons.length; i++) {
+
+    formSubmitButtons[i].addEventListener('click',
+        (e) => {
+            e.preventDefault()
+            handleFormSubmit(formSubmitConfirmations[i])
+            handleFormHide(formContent[i])
+            setTimeout(
+                () => {
+                    submitForm(formContent[i])
+                }, 1700
+            )
+            // e.preventDefault()
+            // preventDefault(formSubmitButtons[i])
+
+        })
+    // console.log({formSubmitButtons: formSubmitButtons[i]})
+}
+
+
 
 
 

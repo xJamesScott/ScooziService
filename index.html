@@ -24,7 +24,7 @@
     <div class="invite-form" id="invite-form">
         <!-- <div class="dimmer-container"> -->
 
-        <div class="form-content">
+        <form class="form-content">
             <div class="form-button">X</div>
 
             <h3>REQUEST INVITE</h3>
@@ -46,6 +46,47 @@
             <div class="input-wrapper submit">
                 <input type="submit" class="form-submit" value="Submit">
             </div>
+        </form>
+
+        <div class="form-submit-confirmation">
+            <div class="form-button">X</div>
+            <h3>FORM SUBMITTED!</h3>
+            <p>We'll be in touch!</p>
+        </div>
+
+        <div id="dimmer-form" class="dimmer"></div>
+    </div>
+
+    <div class="sales-form" id="sales-form">
+        <!-- <div class="dimmer-container"> -->
+
+        <form class="form-content">
+            <div class="sales-button">X</div>
+
+            <h3>REQUEST INFO</h3>
+            <p>We'd be happy to connect you with a member of our sales team.</p>
+
+            <div class="input-wrapper">
+                <img src="./icons/input-name.png" class="name-input-icon">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-wrapper">
+                <img src="./icons/input-email.png" class="email-input-icon">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-wrapper">
+                <img src="./icons/input-phone.png" class="name-phone-icon">
+                <input type="text" placeholder="Phone">
+            </div>
+
+            <div class="input-wrapper submit">
+                <input type="submit" class="form-submit" value="Submit">
+            </div>
+        </form>
+        <div class="form-submit-confirmation">
+            <!-- <div class="form-button">X</div> -->
+            <h3>FORM SUBMITTED!</h3>
+            <p>We'll be in touch!</p>
         </div>
         <div id="dimmer-form" class="dimmer"></div>
     </div>
@@ -175,7 +216,7 @@
                             an
                             easy to use app.</p>
                     </div>
-                    <button class="feat-button">Learn More</button>
+                    <button class="feat-button sales-button">Learn More</button>
                 </div>
                 <div class="feature-column feat-img-container-right">
                     <img class="feat-img feat-img-right" src="./images/telemetry.jpg" alt="">
@@ -199,7 +240,7 @@
                             know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23
                             cities over the coming year.</p>
                     </div>
-                    <button class="feat-button">Learn More</button>
+                    <button class="feat-button sales-button">Learn More</button>
                 </div>
 
             </div>
@@ -215,7 +256,7 @@
                             also link your PayPal account inside the app. Need to pay later? No worries! You can defer
                             payment for up to a month.</p>
                     </div>
-                    <button class="feat-button">Learn More</button>
+                    <button class="feat-button sales-button">Learn More</button>
                 </div>
 
                 <div class="feature-column feat-img-container-right">
