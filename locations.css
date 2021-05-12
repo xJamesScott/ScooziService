@@ -9,24 +9,17 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 10%;
 }
 
 .locations-map {
-    /* display: flex; */
     margin: 0 auto;
     position: relative;
     height: 650px;
     display: inline-block;
 }
 
-/* .locations-map img {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-} */
-
 .map-img {
-    /* position: absolute; */
     display: block;
     max-width: 100%;
     display: block;
@@ -35,22 +28,7 @@
 }
 
  .location-card {
-    /* background-repeat: no-repeat; */
-    /* width: 12rem;
-    height: 6rem;
-    color: var(--accent3);
-    position: absolute;
-    display: flex;
-    display: block; */
-    /* overflow: visible; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* text-align: center; */
-    /* margin: 0; */
-
-    
 }
-
 
 .test-map {
     position: relative;
@@ -58,32 +36,22 @@
 
 .map-img-test {
     height: 100vh;
-  width: 100vw;
-/*   background-size: 300px 100px; */
-  background-color: blue;
-  /* background-size: cover; */
-/*   position: relative; */
-  max-width: 100%;
-  /* width: 800px; */
-  display: block;
-  object-fit: contain;
+    width: 100vw;
+    background-color: blue;
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
 }
 .test-card {
-position: absolute;
-  display: block;
-  width: 5%;
-  height: 5%;
-  background: url('https://s33.postimg.cc/6d6a8b4yn/pin.png') no-repeat center center;
-  background-size: contain;
-/*   transform: translateX(150%) translateY(-150%); */
-
-    /* top: -500%;
-    left: 60%; */
+    position: absolute;
+    display: block;
+    width: 5%;
+    height: 5%;
+    background: url('https://s33.postimg.cc/6d6a8b4yn/pin.png') no-repeat center center;
+    background-size: contain;
     top: 0;
     left: 0;
-
     transform: translateY(1000%) translateX(1000%);
-
 }
 
 .location-hover {
@@ -101,11 +69,6 @@ position: absolute;
   display: block;
   width: 5%;
   height: 5%;
-  /* background: url('https://s33.postimg.cc/6d6a8b4yn/pin.png') no-repeat center center;
-  background-size: contain; */
-/*   transform: translateX(150%) translateY(-150%); */
-  /* top: 50%;
-  left: 20%; */
 }
 
 #new-york.location-card {
@@ -118,19 +81,6 @@ position: absolute;
     top: 10%;
     left: 35%;
 }
-
-#yokohama {
-
-}
-
-#yokohama {
-    jakarta   
-}
-
-/* .location-card h3 {
-    transform: translateY(-20%);
-} */
-
 
 .locations-card:hover {
  opacity: 30%;
@@ -162,18 +112,36 @@ position: absolute;
     border: .15rem solid var(--secondary);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1390px) {
     #locations-bnr {
         background-image: url('./images/careers-locations-hero-tablet.jpg');
+        height: 10rem;
+    }
+
+    #locations-bnr .top-banner {
+        margin: 0;
+        height: 100%;
     }
 
     .locations-map {
         background-image: url('./images/world-map-tablet.png');
     }
 
+    .locations-cta {
+        flex-direction: column;
+    }
+
+    .loc-cta-title {
+        text-align: center;
+    }
+
+    .loc-cta-button {
+        margin-top: 2rem;
+    }
+
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 930px) {
     #locations-bnr {
         background-image: url('./images/careers-location-hero-mobile.jpg');
     }
@@ -186,7 +154,6 @@ position: absolute;
         display: flex;
         gap: 1rem;
     }
-
   }
 
 

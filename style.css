@@ -20,6 +20,7 @@
     top: 0;
     -webkit-transform: translateZ(0);
     z-index: 9999;
+    
 }
 
 
@@ -941,6 +942,7 @@ justify-content: center;
 
     .mobile-nav {
         display: flex;
+        /* display: none; */
         width: 100vw;
         height: 100vh;
         flex-direction: column;
@@ -1001,6 +1003,24 @@ justify-content: center;
     #home-bnr {
         background-image: url('./images/home-hero-mobile.jpg');
         height: 100%;
+    }
+    
+    .section-margin.bnr-title {
+        display: flex;
+    }
+
+    .bnr-sm-circles {
+        display: none;
+    }
+
+    .bnr-title-container.bnr-sm-title-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .test-title {
+        display: flex;
+        justify-content: center;
     }
 
     .bnr-circles {

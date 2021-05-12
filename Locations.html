@@ -21,6 +21,74 @@
 
 <body>
 
+    <div class="invite-form" id="invite-form">
+
+        <form class="form-content">
+            <div class="form-button">X</div>
+
+            <h3>REQUEST INVITE</h3>
+            <p>We'll notify you when you're all set to scoot!</p>
+
+            <div class="input-wrapper">
+                <img src="./icons/input-name.png" class="name-input-icon">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-wrapper">
+                <img src="./icons/input-email.png" class="email-input-icon">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-wrapper">
+                <img src="./icons/input-phone.png" class="name-phone-icon">
+                <input type="text" placeholder="Phone">
+            </div>
+
+            <div class="input-wrapper submit">
+                <input type="submit" class="form-submit" value="Submit">
+            </div>
+        </form>
+
+        <div class="form-submit-confirmation">
+            <div class="form-button">X</div>
+            <h3>FORM SUBMITTED!</h3>
+            <p>We'll be in touch!</p>
+        </div>
+
+        <div id="dimmer-form" class="dimmer"></div>
+    </div>
+
+    <div class="sales-form" id="sales-form">
+
+        <form class="form-content">
+            <div class="sales-button">X</div>
+
+            <h3>REQUEST INFO</h3>
+            <p>We'd be happy to connect you with a member of our sales team.</p>
+
+            <div class="input-wrapper">
+                <img src="./icons/input-name.png" class="name-input-icon">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-wrapper">
+                <img src="./icons/input-email.png" class="email-input-icon">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-wrapper">
+                <img src="./icons/input-phone.png" class="name-phone-icon">
+                <input type="text" placeholder="Phone">
+            </div>
+
+            <div class="input-wrapper submit">
+                <input type="submit" class="form-submit" value="Submit">
+            </div>
+        </form>
+        <div class="form-submit-confirmation">
+            <!-- <div class="form-button">X</div> -->
+            <h3>FORM SUBMITTED!</h3>
+            <p>We'll be in touch!</p>
+        </div>
+        <div id="dimmer-form" class="dimmer"></div>
+    </div>
+
     <div class="mobile-nav">
         <div class="main-logo-bnr">
             <a href="./index.html">
@@ -36,7 +104,7 @@
                     <h3 class="mobile-menu-item"><a href="./Locations.html">Location</a></h3>
                     <h3 class="mobile-menu-item"><a href="./Careers.html">Careers</a></h3>
                 </div>
-                <button class="mobile-menu-cta">Get Scootin</button>
+                <button class="mobile-menu-cta form-button">Get Scootin</button>
             </div>
         </div>
         <div id="dimmer"></div>
@@ -52,11 +120,9 @@
                     <a href="./Careers.html">Careers</a>
                 </span>
             </div>
-            <button class="nav-button">Get Scootin</button>
+            <button class="nav-button form-button">Get Scootin</button>
         </div>
     </nav>
-
-
 
     <div class="tp-bnr-container bnr-sm" id="locations-bnr">
         <div class="top-banner section-margin">
@@ -76,32 +142,10 @@
         </div>
         <img class="bnr-sm-circles" src="./patterns/white-circles.svg" alt="">
     </div>
-    <!-- Use SVG from designs as background for locations -->
-    <!-- <div class="locations-map section-margin">
-        <img class="map-img" src="./images/locations-map-desktop.png" alt="">
-        <!~~ <img id="map-desktop" src="./images/locations-map-with-labels-desktop.png" alt=""> ~~>
-        
-        <div class="test-card">This is a test</div>
-        
-        <!~~ <div id="new-york" class="location-card">
-            <h3>New York</h3>
-        </div>
-        <h3>
-            <div id="london" class="location-card">London</div>
-        </h3>
-        <div id="yokohama" class="location-card">
-            <h3>Yokohama</h3>
-        </div>
-        <div id="jakarta" class="location-card">
-            <h3>Jakarta</h3>
-        </div> ~~>
-    </div> -->
 
-    <!-- <div class="test-map"> -->
-    <!-- <img class="map-img-test" src="./images/locations-map-desktop.png" alt=""> -->
     <div class="map-section section-margin">
         <div class="map-container">
-            <svg width="1110" height="543" viewBox="0 0 1110 543" fill="none" xmlns="http://www.w3.org/2000/svg"
+            <svg width="" height="" viewBox="0 0 1110 543" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="1110" height="542.812" fill="url(#pattern0)" />
                 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1110" height="543">
@@ -161,48 +205,13 @@
         </div>
     </div>
 
-
-    <!-- <img id="map-desktop" src="./images/locations-map-with-labels-desktop.png" alt=""> -->
-
-    <!-- <div class="test-card">This is a test</div> -->
-
-    <!-- <div id="new-york" class="location-card">
-            <h3>New York</h3>
-        </div>
-        <h3>
-            <div id="london" class="location-card">London</div>
-        </h3>
-        <div id="yokohama" class="location-card">
-            <h3>Yokohama</h3>
-        </div>
-        <div id="jakarta" class="location-card">
-            <h3>Jakarta</h3>
-        </div> -->
-    <!-- </div> -->
-
-
-    <!-- <div class="loc-mobile-cards">
-        <div class="loc-card-bg">
-            <h3 class="loc-mobile-card">New York</h3>
-        </div>
-        <div class="loc-card-bg">
-            <h3 class="loc-mobile-card">London</h3>
-        </div>
-        <div class="loc-card-bg">
-            <h3 class="loc-mobile-card">Jakarta</h3>
-        </div>
-        <div class="loc-card-bg">
-            <h3 class="loc-mobile-card">Yokohama</h3>
-        </div>
-    </div> -->
-
     <div class="locations-cta section-margin">
         <h2 class="loc-cta-title">Your&nbsp;City<br>Not&nbsp;Listed?</h2>
         <p class="loc-cta-subtitle">If you’d like to see Scoozi in your hometown, be sure to let us know. We track
             requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on
             social.
         </p>
-        <button class="loc-cta-button">Message Us</button>
+        <button class="loc-cta-button sales-button">Message Us</button>
     </div>
 
     <div id="e-footer"></div>
